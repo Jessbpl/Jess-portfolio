@@ -1,6 +1,49 @@
+:root {
+  --branding-color: #2bbce1;
+
+  --secondary-color: #dcf8fe;
+  --heading-font-family: "Mulish", sans-serif;
+  --default-font-family: "Monserrat";
+}
 body {
   background: pink;
+  font-family: var(--default-font-family);
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 96px;
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(32, 31, 31);
+}
+.hero h2 {
   font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2px;
+}
+.btn-branding {
+  border-color: rgba(42, 120, 151, 0.617);
+  background: #59c9e5;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 30px;
 }
