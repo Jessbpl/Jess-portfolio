@@ -1,12 +1,15 @@
 :root {
-  --branding-color: #2bbce1;
+  --branding-color: #0f6f87;
 
-  --secondary-color: #dcf8fe;
+  --secondary-color: #82c2dc;
   --heading-font-family: "Mulish", sans-serif;
-  --default-font-family: "Monserrat";
+  --default-font-family: sans-serif;
 }
 body {
-  background: pink;
+  background: var(--secondary-color);
+  background-size: cover;
+  background-position: center;
+
   font-family: var(--default-font-family);
 }
 h1,
@@ -15,35 +18,122 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 96px;
-  color: black;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
+  color: rgb(66, 64, 64);
+  font-family: var(--default-font-family);
+  font-weight: 500;
 }
-.hero {
-  background: var(--secondary-color);
+
+.header {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 160px 20px;
 }
-.hero p {
+.header h1 {
+  font-size: 90px;
+}
+.header p {
+  font-family: var(--heading-font-family);
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: rgb(32, 31, 31);
+  color: rgb(248, 245, 245);
 }
-.hero h2 {
+.header h2 {
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 2px;
 }
 .btn-branding {
-  border-color: rgba(42, 120, 151, 0.617);
-  background: #59c9e5;
+  border-color: rgba(112, 200, 234, 0.941);
+  background: #147c96;
   border-radius: 4px;
   color: #fff;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   padding: 15px 30px;
+}
+.btn-branding-outline {
+  border-color: rgba(22, 82, 106, 0.916);
+  background: #fff;
+  border-radius: 4px;
+  color: #59c9e5;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 30px;
+}
+.btn-branding-outline:hover {
+  border-color: #fff;
+  background: rgba(42, 120, 151, 0.617);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 15px 30px;
+}
+.project-description {
+  text-align: center;
+  padding: 120px 60px;
+}
+.project-description h2 {
+  text-align: center;
+  padding: 0;
+  font-size: 50px;
+}
+main {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2px;
+  font-size: 28px;
+  font-family: var(--default-font-family);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: var(--heading-font-family);
+}
+
+footer {
+  font-size: 18px;
+  font-family: var(--heading-font-family);
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  .header {
+    padding: 80px 20px;
+  }
+  .project-description {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .header h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .header p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
