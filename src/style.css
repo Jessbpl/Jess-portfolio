@@ -108,7 +108,32 @@ footer {
   font-size: 18px;
   font-family: var(--heading-font-family);
 }
-@media (max-width: 960px) {
+.about-page {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-hero {
+  padding: 50px 20px;
+}
+.about-hero h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-hero p {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+  line-height: 28px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.profile {
+  max-width: 400px;
+  border-radius: 50%;
+}
+@media (max-width: 900px) {
   h1 {
     font-size: 44px;
     line-height: 2;
@@ -118,6 +143,10 @@ footer {
     padding: 80px 20px;
   }
   .project-description {
+    text-align: center;
+    padding: 0;
+  }
+  .about-hero {
     text-align: center;
     padding: 0;
   }
