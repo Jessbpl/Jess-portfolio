@@ -114,21 +114,37 @@ footer {
   background-size: cover;
 }
 
-.about-hero {
+.content-container {
   padding: 50px 20px;
 }
-.about-hero h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
+  font-weight: 900;
 }
-.about-hero p {
+.content-container p {
   font-size: 18px;
   font-family: var(--default-font-family);
+
   line-height: 28px;
 }
-.about-section-content {
+.content h1 {
   margin: 30px;
 }
+.content h3 {
+  font-size: 24px;
+  font-family: var(--default-font-family);
+  line-height: 1;
+  margin: 20px 0 0;
+}
+.content p {
+  font-size: 14px;
+  margin: 0;
+}
+.content img {
+  aspect-ratio: 1/1;
+}
+
 .profile {
   max-width: 400px;
   border-radius: 50%;
