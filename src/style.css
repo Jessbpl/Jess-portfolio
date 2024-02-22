@@ -89,6 +89,32 @@ h6 {
   padding: 0;
   font-size: 50px;
 }
+
+.logo {
+  max-width: 150px;
+  max-height: 70px;
+}
+nav {
+  padding: 20px 30px;
+  margin: 0;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--branding-color);
+}
+.navbar-nav {
+  padding: 0 20px;
+  margin: 0;
+}
+.nav-item {
+  text-decoration: none;
+  color: #272142;
+  transition: all 150ms ease-in-out;
+}
+.nav-item a:hover {
+  color: var(--branding-color);
+}
+
 main {
   font-family: "Mulish", sans-serif;
   font-weight: normal;
@@ -136,7 +162,6 @@ footer {
   font-family: var(--default-font-family);
   line-height: 1;
   margin: 20px 0 0;
-  text-decoration: none;
 }
 .content p {
   font-size: 14px;
