@@ -71,8 +71,8 @@ h6 {
   padding: 15px 30px;
 }
 .btn-branding-outline:hover {
-  border-color: #fff;
-  background: rgba(42, 120, 151, 0.617);
+  border-color: var(--branding-color);
+  background: #fff;
   border-radius: 4px;
   color: #fff;
   font-size: 18px;
@@ -133,6 +133,34 @@ h2 {
 footer {
   font-size: 18px;
   font-family: var(--heading-font-family);
+}
+footer .contact-box {
+  background: #ffffffb1;
+  padding: 30px 120px;
+  margin: 30px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .social-links a {
+  margin: 0 20px;
+  font-size: 28px;
+  color: #fff;
+}
+.contact-button {
+  background-color: var(--branding-color);
+  color: #fff;
+  padding: 20px;
+}
+.contact-button:hover {
+  background-color: #fff;
+  color: var(--branding-color);
+  border-top: var(--branding-color);
 }
 .about-page {
   background-image: url("images/background.jpg");
