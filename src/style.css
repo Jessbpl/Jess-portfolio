@@ -53,9 +53,10 @@ h3 {
 }
 .header h2 {
   font-family: "Mulish", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 24px;
   line-height: 2px;
+  color: rgb(248, 245, 245);
 }
 .btn-branding {
   border-color: rgba(112, 200, 234, 0.941);
@@ -235,8 +236,9 @@ footer .social-links a {
   font-family: var(--default-font-family);
   font-size: 20px;
   background: #bbe7f735;
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
+  margin: 15px;
 }
 .app-pic {
   padding: 0 30px;
@@ -254,6 +256,10 @@ footer .social-links a {
   color: #0f6f87;
   background: #fff;
   border: #0f6f87;
+}
+.social-media-handle:hover {
+  color: #0f6f87;
+  transition: all ease-in-out 200ms;
 }
 
 @media screen and (max-width: 995px) {
