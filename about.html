@@ -2,8 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Jessica is a front-end engineer based in Spain. She is passionate about design and user-friendly websites with a keen eye for detail."
+    />
+    <title>About me - Jessica Bravo</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -29,8 +34,8 @@
   <body class="about-page">
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="src/images/Jess-logo.png" class="logo" />
+        <a class="navbar-brand" href="/" title="Homepage">
+          <img src="src/images/Jess-logo.png" class="logo" alt="Jessica Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -46,16 +51,27 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/" title="Homepage"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a
+                class="nav-link active"
+                href="/about.html"
+                title="About Jessica"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.html">My work</a>
+              <a class="nav-link" href="/my-work.html" title="Jessica's work"
+                >My work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link" href="/contact.html" title="Contact Jessica"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -66,31 +82,39 @@
       <div class="row mt-5">
         <div class="col-md-6">
           <div class="content">
-            <h1 class="mb-5">Hello I am Jessica Bravo</h1>
+            <h1 class="mb-5">👋 Hello, I am Jessica Bravo</h1>
+            <br />
             <h2 class="mb-5">Front-end developer, based in Spain.</h2>
-            <p>
-              Passionate about creating beautiful and user-friendly websites.
-              <br />
-              🌱 I'm excited to dive into the world of web development and bring
-              creative ideas to life. With a keen eye for design and a knack for
-              problem-solving, I'm ready to collaborate on projects and
-              contribute fresh perspectives to the team.
-              <br />
-              💻 Let's connect and explore the exciting possibilities of
-              front-end development together. I'm open to opportunities to
-              learn, develop, and make a positive impact in the digital world!
-            </p>
-            <a href="#" class="btn btn-branding mt-5 mb-5">See my projects</a>
+            <div class="profile-description">
+              <p>
+                Passionate about creating beautiful and user-friendly websites.
+                <br />
+                <br />
+                🌱 I'm excited to dive into the world of web development and
+                bring creative ideas to life. With a keen eye for design and a
+                knack for problem-solving, I'm ready to collaborate on projects
+                and contribute fresh perspectives to the team.
+                <br />
+                <br />
+                💻 Let's connect and explore the exciting possibilities of
+                front-end development together. I'm open to opportunities to
+                learn, develop, and make a positive impact in the digital world!
+              </p>
+            </div>
+            <a
+              href="/my-work.html"
+              class="btn btn-branding mt-5 mb-5"
+              title="link to work projects"
+              >See my projects</a
+            >
           </div>
         </div>
         <div class="col-md-6 mt-5">
-          <div class="profile-pic">
-            <img
-              src="src/images/jess.jpeg"
-              alt="jess-picture"
-              class="img-fluid rounded"
-            />
-          </div>
+          <img
+            src="src/images/jess.jpeg"
+            alt="jess-picture"
+            class="profile-pic img-fluid rounded"
+          />
         </div>
       </div>
     </div>
@@ -99,7 +123,7 @@
         class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
       >
         <div>
-          <h4>Work Inquiry</h4>
+          <h3>Work Inquiry</h3>
           <p class="text-muted">Let's work together!</p>
         </div>
         <div class="mt-3">
@@ -120,22 +144,36 @@
         >
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="www.linkedin.com/in/jessicabravop">
-          <i class="fa-solid fa-envelope"></i>
+        <a
+          href="https://github.com/Jessbpl"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
         </a>
-        <a href="mailto:jessbrapl@gmail.com">
+
+        <a
+          href="www.linkedin.com/in/jessicabravop"
+          target="_blank"
+          title="LinkedIn Profile"
+        >
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://www.instagram.com/jess_brap/">
+
+        <a
+          href="https://www.instagram.com/jess_brap/"
+          target="_blank"
+          title="Instagram Profile"
+        >
           <i class="fab fa-instagram"></i>
         </a>
       </div>
       <p class="text-center mt-5">
-        This page was coded by
+        💙 This project was coded by
         <a
           href="https://github.com/Jessbpl"
           target="_blank"
-          title="Jessica Bravo"
+          title="GitHub Profile"
           >Jessica Bravo</a
         >
         and is
@@ -144,7 +182,7 @@
           taget="_blank"
           title="GitHub project"
         >
-          open-sourced
+          open-sourced 🩵
         </a>
       </p>
     </footer>
