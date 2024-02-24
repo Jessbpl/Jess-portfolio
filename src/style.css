@@ -103,7 +103,7 @@ h3 {
   max-width: fit-content;
   font-size: 16px;
   text-align: center;
-  margin: 20px auto;
+  margin: 0 20px;
   border-radius: 10px;
 }
 .project-description h2 {
